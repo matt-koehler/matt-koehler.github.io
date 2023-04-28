@@ -1,44 +1,134 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Matt Koehler</title>
-        <link href="style.css" rel="stylesheet">
-	    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Koehler</title>
+    <script src="https://kit.fontawesome.com/80c1cdc907.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">       
+        <div class="container">
+            <nav>
+                <img src="files/mknewicon.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="files/Matt_K_Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
 
-    </head>
-    <body>
-        <h1>Matt Koehler</h1>
-        <div class = "row">
-         <div class="column">
-        <h2>About me</h2>
-        <p>I am a 4th year computer science major attending the Univeristy of Virginia. 
-             
-            </p></div>
-        <div class="column">
-        <h2>Education</h2>
-        <p>I will be attaining a Bachelors of Science in Computer Science in May 2023. 
-            I have taken many classes over my time at UVA such as Machine Learning, Operating Systems,  
-            Algorithms, Advanced Software Development, Database Systems,
-            Mobile Application Development and many more. Through these classes I have gained a lot of knowledge such as
-            learning languages like Java, Python, C++ and more. Also, I learned how to work in teams to complete projects
-            with strict deadlines that utilized an agile project style. Ultimately, through my education I have become much better 
-            at computer science and can't wait to utilize the skills I have learned for the next step in my life.
+                <h1>Hello I am <span>Matt Koehler,</span> <br>a software engineer from Virginia</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src='files/uvalogo.png'>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p class="des"> I am a spring 2023 graduate from a top-tier computer science program<br> 
+                        seeking to leverage my skills in computer science for software engineering. <br>
+                        I am very passionate for computer science and cannot wait to use the skills <br>
+                        I have learned in the next stages of my life!
+                    
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links a" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active" id="skills">
+                        <ul>
+                            <li><span>Computer Science Skills</span><br>Machine Learning, Algorithms, Database Systems, Software Development</li>
+                            <li><span>Programming Languages</span><br>Python, Java, Javascript, C++</li>
+                            <li><span>Other</span><br>HTML, CSS, Django, React, PHP, SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>BS in Computer Science at The University of Virginia </li>
+                            <li><span>2015-2019</span><br>Advanced Diploma at Heritage High School</li>
+                        </ul>
+                    </div>
 
-            
-        </p>
+                </div>
+            </div>
         </div>
+
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="project-list">
+                <div class="project">
+                    <img src="files/friend.svg">
+                    <div class="layer">
+                        <h3>BuddyFinder</h3>
+                        <p>The app allows users to add friends based on common interests and message them.
+                            <br>For more details click on the Github icon.
+                        </p>
+                        <a href="https://github.com/matt-koehler/CS3240-app"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="files/car.svg">
+                    <div class="layer">
+                        <h3>CavRide</h3>
+                        <p>The app lets UVA students to join or create rides around Charlottesville
+                            <br>For more details click on the Github icon.
+                        </p>
+                        <a href="https://github.com/matt-koehler/cavride"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="files/food.svg">
+                    <div class="layer">
+                        <h3>Nutrilitics</h3>
+                        <p>The app lets users to select meals from a database they have eaten throughout the day to stay close to their calorie goals. 
+                            <br>For more details click on the Github icon.
+                        </p>
+                        <a href="https://github.com/matt-koehler/Nutrilitics-Final"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+             <a href="https://github.com/matt-koehler" class="btn"> <i class="fa-brands fa-github"> </i>   Explore Other Projects</a>
         </div>
-        <h2>Projects</h2>
-        <div>
-        <a href="https://github.com/matt-koehler/CS3240-app">Buddy Finder App</a>
-        <a href="https://github.com/matt-koehler/cavride">Cav Ride</a>
-        <a href="https://github.com/matt-koehler/Nutrilitics-Final">Nutrilitics</a>
-        <a href="https://github.com/matt-koehler/schoolML">School Machine Learning</a>
-        <a href="https://github.com/matt-koehler/matt-koehler.github.io">This Website</a>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <div class="sub-title">Contact Me</div>
+                <p><i class="fa-solid fa-envelope"></i>  wmk9umk@virginia.edu</p>
+                <p><i class="fa-solid fa-phone"></i>  571-242-4940</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit">
+                    <input type="text" name="Name" placeholder="Your Name" required oninvalid="this.setCustomValidity('Please Enter Your Name')"
+                    oninput="setCustomValidity('')">
+                    <input type="email" name="Email" placeholder="Your Email" required oninvalid="this.setCustomValidity('Please Enter Your Email')"
+                    oninput="setCustomValidity('')">
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn1">Submit </button>
+                </form>
+                <span id="msg"></span>
+            </div>
         </div>
-    </body>
-    <footer>
-    <a href="https://github.com/matt-koehler">My Github</a>
-    <a href="files/Matt_K_Resume.pdf">My Resume</a>
-    </footer>
+    </div>
+    <div class="bottom">
+        <p>Matt Koehler © 2023</p>
+    </div>
+</div>
+<script src="index.js"></script>
+    
+</body>
 </html>
