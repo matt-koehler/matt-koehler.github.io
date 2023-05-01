@@ -22,7 +22,51 @@ body {
 
 .container{
   padding: 20px 10%;
+  position: relative;
+  width:100%;
 }
+
+.bubbles{
+  position: absolute;
+  left: 0px;
+
+  display: flex;
+}
+
+
+
+.bubbles span{
+  z-index: -1;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #232d4b91;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #232d4b2c,
+  0 0 50px #232d4b6c,
+  0 0 100px #232d4b63;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+  border-radius: 50%;
+  background: #e572008e;
+  box-shadow: 0 0 0 10px #e572003a,
+  0 0 50px #e5720080,
+  0 0 100px #e572007e;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(335vh) scale(0.1);
+  }
+  100%{
+    transform: translateY(-15vh) scale(1);  
+  }
+}
+
 
 nav{
   display: flex;
@@ -363,4 +407,3 @@ form .btn1{
   display:block;
 
 }
-
