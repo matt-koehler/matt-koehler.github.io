@@ -34,3 +34,20 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+const text = document.querySelector(".changeText");
+
+const textLoad = () => {
+  setTimeout(() =>{
+    text.textContent = "software engineer";
+  },0);
+  setTimeout(() =>{
+    text.textContent = "web developer";
+  },4000);
+  setTimeout(() =>{
+    text.textContent = "computer programmer";
+  },8000);
+}
+
+textLoad();
+setInterval(textLoad,12000);
